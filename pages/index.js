@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Landing from "./components/Landing";
-import Card from "./components/Card";
+import Landing from "../components/Landing";
+import Card from "../components/Card";
 import getStores from "../lib/getStores";
 import useGeoLocation from "../hooks/useGeoLocation";
 import { useEffect, useState, useContext } from "react";
@@ -72,7 +72,7 @@ export default function Home(props) {
       }
     };
     test();
-  }, [crds]);
+  }, [crds, dispatch]);
 
   useEffect(() => {
     if (err) {
