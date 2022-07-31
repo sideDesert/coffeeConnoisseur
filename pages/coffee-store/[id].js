@@ -144,7 +144,12 @@ function Store(initialProps) {
           <a>
             <div className={styles.back}>
               <span className={styles.icon}>
-                <Image src={BackIcon} width={25} height={25} />
+                <Image
+                  alt="icon for back button"
+                  src={BackIcon}
+                  width={25}
+                  height={25}
+                />
               </span>
               <span className={styles.text}>Go Back Home</span>
               <br />
