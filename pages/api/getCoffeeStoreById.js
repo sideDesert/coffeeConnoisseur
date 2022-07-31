@@ -14,7 +14,7 @@ const getCoffeeStoresById = async (req, res) => {
         const records = findCoffeeStoreRecords.map((record) => {
           return { ...record.fields };
         });
-        res.json(records).status(200);
+        res.json(records);
       } else {
         res.json({ message: `Id could not be found` });
       }
