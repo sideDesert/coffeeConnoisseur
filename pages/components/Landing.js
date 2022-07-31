@@ -52,7 +52,7 @@ function Landing(props) {
         </button>
       </div>
       <div className={styles.heroImg} ref={imageref}>
-        <Image src="/hero.png" width={400} height={700} />
+        <Image alt="hero image" src="/hero.png" width={400} height={700} />
       </div>
     </section>
   );

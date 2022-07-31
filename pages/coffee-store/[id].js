@@ -92,7 +92,6 @@ function Store(initialProps) {
         }),
       });
       const dbCoffeeStoree = res.json();
-      console.log(dbCoffeeStoree);
     } catch (err) {
       console.error("Error", err);
     }
@@ -113,7 +112,7 @@ function Store(initialProps) {
     } else {
       handleCreateCoffeeStore(coffeeStore);
     }
-  }, [id]);
+  }, [id, coffeeStore, state.stores]);
 
   if (router.isFallback) {
     return <div>Loading...</div>;
@@ -157,6 +156,7 @@ function Store(initialProps) {
 
           <div className={styles.imgContainer}>
             <Image
+              alt={"Coffe Store " + coffeeStore.name}
               layout="fill"
               src={
                 coffeeStore.imgUrl ||
@@ -171,7 +171,11 @@ function Store(initialProps) {
           </div>
           <div className={styles.address}>
             <span className={styles.locationIcon}>
-              <Image src={LocationIcon} layout="fill" />
+              <Image
+                src={LocationIcon}
+                layout="fill"
+                alt="Icon to indicate location"
+              />
             </span>
             <p>{coffeeStore.address || "test"}</p>
             <p>{coffeeStore.neighborhood ? coffeeStore.neighborhood : ""}</p>
