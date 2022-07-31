@@ -1,0 +1,109 @@
+.back{
+    padding: 0.8rem 1rem;
+    margin: 1rem;
+    background-color:white;
+    transition: 0.2s ease-in-out;
+    background-repeat: no-repeat;
+    width: fit-content;
+    border-radius: 10px;
+    color: black;
+    border: solid 2px black;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+    
+
+        .icon{
+            
+            > span{
+                transform: translateY(2px);
+            }
+        }
+    }
+
+.parentContainer{
+
+    a{
+        font-size: 1.3rem;
+        .text{
+            position: relative;
+            top: -3px;
+        }
+    }
+    .container{
+        h2{
+            font-size: 2rem;
+            @media screen and (min-width:360px) {
+                font-size: 2.5rem;
+            }
+            @media screen and (min-width:450px) {
+                font-size: 3rem;
+            }
+            @media screen and (min-width:600px) {
+                font-size: 5rem;
+                
+            }
+            font-family:'Playfair Display';
+            margin: 2rem;
+        }
+        .address{
+            font-size: 1rem;
+            margin: 2rem;
+            @media screen and (min-width:400px) {
+                margin: 2rem;
+                font-size: 1.7rem;
+            }
+            @media screen and (min-width:500px) {
+                margin: 3rem;
+                font-size: 2rem;
+            }
+        }
+    }
+    .imgContainer{
+        position: relative;
+        width: 90%;
+        min-height: 60vh;
+        @media screen and (min-width:525px) {
+            min-height: 30rem;
+        }
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden;
+        .visitSite{
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            bottom: 0;
+            margin: 1rem;
+            background: white;
+            padding: 0.8rem 1rem;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        >span{
+
+            >img{
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.locationIcon{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+.like{
+    font-size: 1.4rem;
+    cursor: pointer;
+    .liked{
+        background: #ff3f53 !important;
+        color: white !important;
+        border: 2px solid #ff3f53 !important;
+    }
+}

@@ -1,9 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'RobotoSlab';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/RobotoSlab-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'RobotoSlab';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/RobotoSlab-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'RobotoSlab';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/RobotoSlab-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'RobotoSlab';
+  font-style: normal;
+  font-weight: 200;
+  src: url(/fonts/RobotoSlab-ExtraLight.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'RobotoSlab';
+  font-style: normal;
+  font-weight: 600;
+  src: url(/fonts/RobotoSlab-ExtraBold.ttf) format('truetype');
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: RobotoSlab ,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 300;
 }
 
 a {
@@ -13,4 +48,41 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button{
+  color: white;
+  background-color:rgba(0, 19, 75, 0.315);
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  font-family: RobotoSlab;
+  font-weight: 300;
+
+    position: relative;
+    margin-top: 2rem;
+    width: fit-content;
+}
+
+button:hover{
+  cursor: pointer;
+}
+footer{
+  padding: 2ch;
+  background: white;
+  position: relative;
+  color: black;
+}
+
+.card-wrapper{
+  position: relative;
+}
+.error{
+  background-color: rgb(255, 72, 59);
+  color: white;
+  padding: 0.5rem;
 }

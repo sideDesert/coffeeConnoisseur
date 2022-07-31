@@ -1,0 +1,85 @@
+.section{
+    background-image: url('/mesh-gradient.png');
+    height: 100vh;
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    font-family: 'Playfair Display';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    div{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        margin-left: 1rem;
+        flex-direction: column;
+        button{    
+        transform: translateX(-50%);
+        left: 50%;
+        }
+        @media screen and (min-width:370px) {
+            margin-left: 2rem;
+            button{
+                transform: none;
+                left: 0;
+            }
+        }
+        @media screen and (min-width:760px) {
+            align-items: flex-start;
+            margin-left: 8rem;
+        }
+        h1{
+            font-size: 3rem;
+            @media screen and (min-width:460px) {
+                font-size: 3rem;
+            }
+            @media screen and (min-width:760px) {
+                font-size: 4rem;
+                
+            }
+        }
+    }
+    h2{
+        font-size: 1.5rem;
+        font-family: 'Caveat';
+        font-weight: 300;
+        @media screen and (min-width:460px) {
+            font-size: 1.7rem;
+        }
+        @media screen and (min-width:760px) {
+            font-size: 2rem;
+            text-align: left;
+        }
+    }
+}
+.heroImg{
+    width: 14rem;
+    height: auto;
+    position: absolute;
+    right: 0rem;
+    bottom: -3rem;
+    @media screen and (max-height:714px) {
+        width: 8rem;
+        height: auto;
+    }
+    @media screen and (max-height:544px) {
+        width: 6rem;
+        height: auto;
+    }
+    @media screen and (min-width:1020px) {
+        width: 15rem;
+        height: auto;
+        right: 5%;
+    /* top: 50%; */
+    transform: translateY(50%);
+    bottom: 45%;
+
+    }
+    
+    
+}
